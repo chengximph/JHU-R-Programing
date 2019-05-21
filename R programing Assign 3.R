@@ -56,3 +56,14 @@ cacheSolve <- function(x, ...) {
   inv      
 }
 
+# Usage example
+x <- matrix(1:4, nrow=2, ncol=2)
+m <- makeCacheMatrix(x)
+s <- cacheSolve(m)
+print(s)
+# s should return: 
+#    [,1] [,2] 
+#[1,]   -2  1.5 
+#[2,]    1 -0.5 
+
+
