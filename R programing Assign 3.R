@@ -15,7 +15,7 @@ makeVector <- function(x = numeric()) {
              getmean = getmean)
 }
 
-## Example that calculates the mean of the special “vector” created with the above function
+## Example that calculates the mean of the special â€œvectorâ€ created with the above function
 cachemean <- function(x, ...) {
         m <- x$getmean()
         if(!is.null(m)) {
@@ -26,9 +26,11 @@ cachemean <- function(x, ...) {
         m <- mean(data, ...)
         x$setmean(m)
         m
+}
+        
+      
 ## A pair of functions that cache the inverse of a matrix.
 ## This function creates a special "matrix" object that can cache its inverse.
-
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y){
